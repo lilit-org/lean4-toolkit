@@ -1,0 +1,27 @@
+# lean build artifacts
+/build/
+/.lake/
+/.elan/
+
+# editor and os files
+*.swp
+*.swo
+*~
+.DS_Store
+.idea/
+.vscode/
+
+# compiled output
+*.olean
+*.exe
+*.out
+*.log
+
+# node/npm (if used for tooling)
+node_modules/
+
+# backup files
+*.bak
+
+# test output
+/test_output/ 
