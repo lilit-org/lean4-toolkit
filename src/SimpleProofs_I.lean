@@ -1,12 +1,8 @@
+import src.Basics
+
 /-!
 ## simple proofs I
 -/
-
--- takes a natural number and returns its double
-def double (n : Nat) : Nat := n + n
-
--- checks if a number is even by seeing if it's divisible by 2
-def isEven (n : Nat) : Bool := n % 2 = 0
 
 -- this theorem proves that doubling the sum of two numbers is the same as
 -- adding their doubles --> 2(n + m) = 2n + 2m
