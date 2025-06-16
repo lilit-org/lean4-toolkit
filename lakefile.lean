@@ -11,4 +11,8 @@ require mathlib from git
 @[default_target]
 lean_lib «src» {
   -- add library configuration options here
+}
+
+lean_exe Main {
+  root := `Main
 } 
