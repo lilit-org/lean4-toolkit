@@ -1,50 +1,36 @@
-/-!
-##
-## inductive types
-##
--/
+import src.classic_problems.BinaryTree
 
 /-!
 ##
-## a simple inductive type for binary trees
+## this file demonstrates various examples of binary trees and their operations
 ##
 -/
-inductive BinaryTree (α : Type) where
-  | leaf : BinaryTree α
-  | node (left : BinaryTree α) (value : α) (right : BinaryTree α) : BinaryTree α
 
-
-/-!
-##
-## a function to count nodes in a binary tree
-##
--/
-def countNodes {α : Type} : BinaryTree α → Nat
-  | .leaf => 0
-  | .node left _ right => 1 + countNodes left + countNodes right
-
-
-
--- examples
+-- basic tree with three nodes
 def exampleTree : BinaryTree Nat :=
   .node (.node .leaf 1 .leaf) 2 (.node .leaf 3 .leaf)
 
 #eval countNodes exampleTree  -- should output 3
 
+-- empty tree
 def emptyTree : BinaryTree Nat := .leaf
 #eval countNodes emptyTree  -- should output 0
 
+-- single node tree
 def singleNodeTree : BinaryTree Nat := .node .leaf 42 .leaf
 #eval countNodes singleNodeTree  -- should output 1
 
+-- left-heavy tree
 def leftHeavyTree : BinaryTree Nat :=
   .node (.node (.node .leaf 1 .leaf) 2 .leaf) 3 .leaf
 #eval countNodes leftHeavyTree  -- should output 3
 
+-- right-heavy tree
 def rightHeavyTree : BinaryTree Nat :=
   .node .leaf 1 (.node .leaf 2 (.node .leaf 3 .leaf))
 #eval countNodes rightHeavyTree  -- should output 3
 
+-- balanced tree
 def balancedTree : BinaryTree Nat :=
   .node
     (.node (.node .leaf 1 .leaf) 2 (.node .leaf 3 .leaf))

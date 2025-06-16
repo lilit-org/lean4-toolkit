@@ -12,34 +12,19 @@ clean: check-lean
 	@lake clean
 	@rm -rf build
 
-.PHONY: test
-test: check-lean
-	@lake test
-
-.PHONY: serve
-serve: check-lean
-	@lake serve
-
 .PHONY: update
 update: check-lean
 	@lake update
 
-.PHONY: run-main
-run-main: check-lean
-	@lake run
+.PHONY: definitions
+definitions: check-lean
+	@lake env lean src/examples/TypeClassesExamples.lean
 
-.PHONY: run-basics
-run-basics: check-lean
-	@lake env lean src/Basics.lean
+.PHONY: classics
+classics: check-lean
+	@lake env lean src/examples/PalindromeExamples.lean
+	@lake env lean src/examples/BinaryTreeExamples.lean
 
-.PHONY: run-simple_proofs_I
-run-simple_proofs_I: check-lean
-	@lake env lean src/SimpleProofs_I.lean
-
-.PHONY: run-bt
-run-bt: check-lean
-	@lake env lean src/BinaryTree.lean
-
-.PHONY: run-tc
-run-tc: check-lean
-	@lake env lean src/TypeClasses.lean
+.PHONY: proofs
+proofs: check-lean
+	@lake env lean src/examples/SumsAndMultiExamples.lean
