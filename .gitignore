@@ -2,6 +2,7 @@
 /build/
 /.lake/
 /.elan/
+elan-init
 
 # editor and os files
 *.swp
