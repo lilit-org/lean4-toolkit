@@ -1,7 +1,9 @@
 import Mathlib.Tactic
 
 /-!
+##
 ## basic types and functions
+##
 -/
 
 -- natural numbers

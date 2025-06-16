@@ -24,6 +24,10 @@ serve: check-lean
 update: check-lean
 	@lake update
 
+.PHONY: run-main
+run-main: check-lean
+	@lake run
+
 .PHONY: run-basics
 run-basics: check-lean
 	@lake env lean src/Basics.lean
@@ -31,3 +35,11 @@ run-basics: check-lean
 .PHONY: run-simple_proofs_I
 run-simple_proofs_I: check-lean
 	@lake env lean src/SimpleProofs_I.lean
+
+.PHONY: run-bt
+run-bt: check-lean
+	@lake env lean src/BinaryTree.lean
+
+.PHONY: run-tc
+run-tc: check-lean
+	@lake env lean src/TypeClasses.lean

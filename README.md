@@ -35,9 +35,25 @@ lean --version
 lake --version
 ```
 
+<br>
+
 ---
 
-### project structure
+### documentation
+
+<br>
+
+- [basic concepts](docs/basic_concepts.md) - introduction to types, functions, and simple proofs in lean 4
+
+<br>
+
+---
+
+### running
+
+<br>
+
+#### project structure
 
 <br>
 
@@ -49,96 +65,14 @@ lake --version
 
 <br>
 
----
-
-### basic concepts
+#### `make build`
 
 <br>
 
-#### types and functions
-
-lean has several basic types:
-- natural numbers (`Nat`): whole numbers starting from 0
-- booleans (`Bool`): true or false values
-- strings: text values
-
-<br>
-
-we start with simple examples to check types using `#check` and evaluate expressions using `#eval`:
-
-```lean
-#check 43        -- shows the type of 43
-#eval 43 + 1     -- evaluates to 44
-#check true      -- shows the type of true
-#eval true && false  -- evaluates to false
-```
-
-<br>
-
-#### function definitions
-
-functions are defined using the `def` keyword. here's a simple example:
-
-```lean
-def double (n : Nat) : Nat := n + n
-```
-
-this defines a function that:
-- takes a natural number `n` as input
-- returns a natural number
-- doubles the input by adding it to itself
-
-<br>
-
-#### simple proofs
-
-lean is primarily a theorem prover. here's a simple proof:
-
-```lean
-theorem double_add (n m : Nat) : double (n + m) = double n + double m := by
-  -- unfold the definition of double to work with the raw addition
-  unfold double
-
-  -- use Lean's simplifier with three key properties of natural number addition
-  -- 1. Nat.add_assoc: (a + b) + c = a + (b + c)  (associativity)
-  -- 2. Nat.add_comm: a + b = b + a              (commutativity)
-  -- 3. Nat.add_left_comm: a + (b + c) = b + (a + c)  (left commutativity)
-  simp only [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
-```
-
-<br>
-
----
-
-### running
-
-<br>
-
-run all `*.lean` files with:
+run all `src/*.lean` files with:
 
 ```shell
 make build
-
-info: src/Basics.lean:8:0: 43 : ℕ
-info: src/Basics.lean:9:0: 44
-info: src/Basics.lean:12:0: Bool.true : Bool
-info: src/Basics.lean:13:0: false
-info: src/Basics.lean:16:0: "gm, anon" : String
-info: src/Basics.lean:17:0: "gm, anon"
-info: src/Basics.lean:27:0: 666
-info: src/Basics.lean:32:0: true
-info: src/Basics.lean:33:0: false
-ℹ [2853/2855] Built src.SimpleProofs_I
-info: src/SimpleProofs_I.lean:21:0: 10
-info: src/SimpleProofs_I.lean:22:0: 0
-info: src/SimpleProofs_I.lean:23:0: 6
-info: src/SimpleProofs_I.lean:26:0: true
-info: src/SimpleProofs_I.lean:27:0: false
-info: src/SimpleProofs_I.lean:28:0: true
-info: src/SimpleProofs_I.lean:31:0: double_add (n m : ℕ) : double (n + m) = double n + double m
-info: src/SimpleProofs_I.lean:34:0: 14
-info: src/SimpleProofs_I.lean:35:0: 14
-Build completed successfully.
 ```
 
 <br>
@@ -151,50 +85,45 @@ run `Basics.lean` with:
 
 ```shell
 make run-basic
-
-43 : ℕ
-44
-Bool.true : Bool
-false
-"gm, anon" : String
-"gm, anon"
-666
-true
-false
 ```
 
 <br>
 
----
 
-#### theorem to prove that doubling the sum of two numbers is the same as adding their double
+#### simple proofs for simple theorems
 
 <br>
 
-run `SimpleProofs_I.lean` with:
+* theorem to prove `2(n + m) = 2n + 2m`
+* theorem to prove the relationship between double and addition
+* theorem to prove double of zero is zero
+
+
+<br>
+
+run `proofs/SimpleProofs_*.lean` (replace `*` with `I` or `II`, etc. - or any other class inside `src/`):
 
 ```shell
-make run-simple_proofs_I
-
-10
-0
-6
-true
-false
-true
-double_add (n m : Nat) : double (n + m) = double n + double m
-14
-14
+make run-simple_proofs_*
 ```
-
 
 <br>
 
 ----
 
-### resources
+### study resources
 
 <br>
 
+#### learning lean
+
+- [learn lean](https://lean-lang.org/documentation/0)
 - [lean 4 documentation](https://leanprover.github.io/lean4/doc/)
-- [lean 4 manual](https://leanprover.github.io/lean4/doc/)
+- [vscode/cursor plugin](https://marketplace.visualstudio.com/items?itemName=leanprover.lean4)
+
+<br>
+
+#### applied examples
+
+- [AI safety via debate, by G. Irving et al (2018)](https://arxiv.org/pdf/1805.00899)
+    - *"In the debate game, it is harder to lie than to refute a lie."*
