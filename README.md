@@ -39,16 +39,6 @@ lake --version
 
 ---
 
-### documentation
-
-<br>
-
-- [basic concepts](docs/basic_concepts.md) - introduction to types, functions, and simple proofs in lean4
-
-<br>
-
----
-
 ### running
 
 <br>
@@ -58,12 +48,10 @@ lake --version
 <br>
 
 - `src.lean`: the main entry point for the source code
-- `Main.lean`: the main module file
-- `src/`: source code for examples and concepts
-- `Makefile`
+- `src/`: source code for concepts and `examples/` 
 - `lakefile.lean`: the lean package manager configuration file (TODO: replace with `toml`)
-- `lake-manifest.json`: automatically generated dependency lock file
 - `lean-toolchain`: specifies the Lean version for the project
+- `Makefile`: speficify all available commands
 
 <br>
 
@@ -83,11 +71,7 @@ make build
 
 <br>
 
-run any other file inside `src/` following its command inside `Makefile`. for instance, run `src/Basics.lean` with:
-
-```shell
-make run-basic
-```
+run any other file inside `src/example/` following its command inside `Makefile`.
 
 <br>
 
@@ -95,6 +79,14 @@ make run-basic
 ----
 
 ### study resources
+
+<br>
+
+#### my notes
+
+<br>
+
+- [basics](docs/basic_concepts.md)
 
 <br>
 
