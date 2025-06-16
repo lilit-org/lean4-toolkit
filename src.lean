@@ -1,2 +1,2 @@
 import «src».Basics
-import «src».proofs.SimpleProofs_I
+import «src».SimpleProofs_I
