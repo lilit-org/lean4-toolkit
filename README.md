@@ -35,18 +35,6 @@ lean --version
 lake --version
 ```
 
----
-
-### project structure
-
-<br>
-
-- `lakefile.lean`: the lean package manager configuration file
-- `src.lean`: the main entry point for the source code
-- `src/Basics.lean`: basic examples and concepts
-- `src/SimpleProofs_*.lean`: more advanced concepts and examples for proofs
-- `Makefile`
-
 <br>
 
 ---
@@ -57,10 +45,14 @@ lake --version
 
 #### types and functions
 
-lean has several basic types:
-- natural numbers (`Nat`): whole numbers starting from 0
-- booleans (`Bool`): true or false values
-- strings: text values
+<br>
+
+* here are two primary concepts in Lean: functions and types.
+
+* lean has several basic types:
+  - natural numbers (`Nat`): whole numbers starting from 0
+  - booleans (`Bool`): true or false values
+  - strings: text values
 
 <br>
 
@@ -76,6 +68,8 @@ we start with simple examples to check types using `#check` and evaluate express
 <br>
 
 #### function definitions
+
+<br>
 
 functions are defined using the `def` keyword. here's a simple example:
 
@@ -111,6 +105,22 @@ theorem double_add (n m : Nat) : double (n + m) = double n + double m := by
 ---
 
 ### running
+
+<br>
+
+#### project structure
+
+<br>
+
+- `lakefile.lean`: the lean package manager configuration file
+- `src.lean`: the main entry point for the source code
+- `src/Basics.lean`: basic examples and concepts
+- `src/SimpleProofs_*.lean`: more advanced concepts and examples for proofs
+- `Makefile`
+
+<br>
+
+#### `make build`
 
 <br>
 
@@ -187,7 +197,6 @@ double_add (n m : Nat) : double (n + m) = double n + double m
 14
 ```
 
-
 <br>
 
 ----
@@ -196,5 +205,14 @@ double_add (n m : Nat) : double (n + m) = double n + double m
 
 <br>
 
+#### learning lean
+
+- [learn lean](https://lean-lang.org/documentation/0)
 - [lean 4 documentation](https://leanprover.github.io/lean4/doc/)
-- [lean 4 manual](https://leanprover.github.io/lean4/doc/)
+
+<br>
+
+#### applied examples
+
+- [AI safety via debate, by G. Irving et al (2018)](https://arxiv.org/pdf/1805.00899)
+    - *"In the debate game, it is harder to lie than to refute a lie."*

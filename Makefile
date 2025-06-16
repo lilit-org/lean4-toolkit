@@ -30,4 +30,4 @@ run-basics: check-lean
 
 .PHONY: run-simple_proofs_I
 run-simple_proofs_I: check-lean
-	@lake env lean src/SimpleProofs_I.lean
+	@lake env lean src/proofs/SimpleProofs_I.lean
