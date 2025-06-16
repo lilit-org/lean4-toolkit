@@ -69,31 +69,10 @@ lake --version
 
 <br>
 
-run all `*.lean` files with:
+run all `src/*.lean` files with:
 
 ```shell
 make build
-
-info: src/Basics.lean:8:0: 43 : ℕ
-info: src/Basics.lean:9:0: 44
-info: src/Basics.lean:12:0: Bool.true : Bool
-info: src/Basics.lean:13:0: false
-info: src/Basics.lean:16:0: "gm, anon" : String
-info: src/Basics.lean:17:0: "gm, anon"
-info: src/Basics.lean:27:0: 666
-info: src/Basics.lean:32:0: true
-info: src/Basics.lean:33:0: false
-ℹ [2853/2855] Built src.SimpleProofs_I
-info: src/SimpleProofs_I.lean:21:0: 10
-info: src/SimpleProofs_I.lean:22:0: 0
-info: src/SimpleProofs_I.lean:23:0: 6
-info: src/SimpleProofs_I.lean:26:0: true
-info: src/SimpleProofs_I.lean:27:0: false
-info: src/SimpleProofs_I.lean:28:0: true
-info: src/SimpleProofs_I.lean:31:0: double_add (n m : ℕ) : double (n + m) = double n + double m
-info: src/SimpleProofs_I.lean:34:0: 14
-info: src/SimpleProofs_I.lean:35:0: 14
-Build completed successfully.
 ```
 
 <br>
@@ -122,7 +101,7 @@ make run-basic
 
 <br>
 
-run `proofs/SimpleProofs_*.lean` (replace `*` with `I` or `II`, etc.):
+run `proofs/SimpleProofs_*.lean` (replace `*` with `I` or `II`, etc. - or any other class inside `src/`):
 
 ```shell
 make run-simple_proofs_*
@@ -140,6 +119,7 @@ make run-simple_proofs_*
 
 - [learn lean](https://lean-lang.org/documentation/0)
 - [lean 4 documentation](https://leanprover.github.io/lean4/doc/)
+- [vscode/cursor plugin](https://marketplace.visualstudio.com/items?itemName=leanprover.lean4)
 
 <br>
 
