@@ -161,40 +161,27 @@ run `Basics.lean` with:
 
 ```shell
 make run-basic
-
-43 : ℕ
-44
-Bool.true : Bool
-false
-"gm, anon" : String
-"gm, anon"
-666
-true
-false
 ```
 
 <br>
 
 ---
 
-#### theorem to prove that doubling the sum of two numbers is the same as adding their double
+#### simple proofs for simple theorems
 
 <br>
 
-run `SimpleProofs_I.lean` with:
+* theorem to prove `2(n + m) = 2n + 2m`
+* theorem to prove the relationship between double and addition
+* theorem to prove double of zero is zero
+
+
+<br>
+
+run `proofs/SimpleProofs_I.lean` with:
 
 ```shell
 make run-simple_proofs_I
-
-10
-0
-6
-true
-false
-true
-double_add (n m : Nat) : double (n + m) = double n + double m
-14
-14
 ```
 
 <br>
