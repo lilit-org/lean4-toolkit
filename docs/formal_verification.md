@@ -38,6 +38,8 @@ complex systems with mathematical rigor
 
 <br>
 
+---
+
 ### rfl
 
 <br>
@@ -48,6 +50,8 @@ complex systems with mathematical rigor
 
 <br>
 
+---
+
 ### rw
 
 <br>
@@ -57,3 +61,26 @@ example (a b c : ℝ) : a * b * c = b * (a * c) := by
   rw [mul_comm a b]
   rw [mul_assoc b a c]
 ```
+
+<br>
+
+
+---
+
+### apply
+
+<br>
+
+* takes a proof of a general statement or implication, and tries to match the conclusion with the current goal, and leaves the hypotheses, if any, as new goal
+* if the given proof matches the goal exactly (modulo definitional equality), you can use the exact tactic instead of apply
+
+<br>
+
+---
+
+### repeat
+
+<br>
+
+* applies a tactic (or a block) as many times as it can
+

@@ -86,6 +86,7 @@ run any other file inside `src/example/` following its command inside `Makefile`
 
 - [basics](docs/basic_concepts.md)
 - [formal verification](docs/formal_verification.md)
+- [advanced concepts](docs/advanced_concepts.md)
 
 <br>
 

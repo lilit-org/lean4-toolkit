@@ -1,3 +1,5 @@
+import Mathlib.Data.Nat.Basic
+
 /-
 ##
 ## for the lolz
