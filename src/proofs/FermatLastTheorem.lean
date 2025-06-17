@@ -1,6 +1,9 @@
 /-
 ##
 ## for the lolz
+## https://leanprover-community.github.io/blog/posts/FLT-announcement/
+## https://github.com/leanprover-community/flt-regular
+## https://leanprover-community.github.io/flt-regular/blueprint/
 ##
 -/
 

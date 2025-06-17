@@ -369,6 +369,10 @@ def twice (f : Nat → Nat) (a : Nat) := f (f a)
 
 <br>
 
+* for instance, `(· + 2)` is syntax sugar for `(fun x => x + 2)`
+
+<br>
+
 ---
 
 ## namespaces
