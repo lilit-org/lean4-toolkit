@@ -28,3 +28,5 @@ classics: check-lean
 .PHONY: proofs
 proofs: check-lean
 	@lake env lean src/examples/SumsAndMultiExamples.lean
+	@lake env lean src/examples/FermatLastTheorem.lean
+	@lake env lean src/examples/DefiningEvenNumber.lean
