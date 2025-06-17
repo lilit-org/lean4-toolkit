@@ -3,7 +3,7 @@ import src.classics.Palindrome
 /-!
 ##
 ## this file demonstrates various ways to construct
-## proofs of palindromes using the `IsPalindrome` inductive type
+## proofs of palindromes using the `isPalindrome` inductive type
 ##
 -/
 
@@ -57,3 +57,42 @@ example : IsPalindrome [true, false, true] := by
 #check IsPalindrome.sandwich_case 1 [2, 3, 2] (IsPalindrome.sandwich_case 2 [3] (IsPalindrome.single_case 3))
 #check IsPalindrome.sandwich_case 'r' (String.toList "ada") (IsPalindrome.sandwich_case 'a' (String.toList "d") (IsPalindrome.single_case 'd'))
 #check IsPalindrome.sandwich_case true [false] (IsPalindrome.single_case false)
+
+
+/-!
+##
+## test cases for palindrome properties
+##
+-/
+
+-- test case 1: empty list
+example : ([] : List Nat) = ([] : List Nat).reverse := by
+  simp
+
+-- test case 2: single element list
+example : ([1] : List Nat) = ([1] : List Nat).reverse := by
+  simp
+
+-- test case 3: two element palindrome
+example : ([1, 1] : List Nat) = ([1, 1] : List Nat).reverse := by
+  simp
+
+-- test case 4: three element palindrome
+example : ([1, 2, 1] : List Nat) = ([1, 2, 1] : List Nat).reverse := by
+  simp
+
+-- test case 5: four element palindrome
+example : ([1, 2, 2, 1] : List Nat) = ([1, 2, 2, 1] : List Nat).reverse := by
+  simp
+
+-- test case 6: non-palindrome
+example : ([1, 2, 3] : List Nat) ≠ ([1, 2, 3] : List Nat).reverse := by
+  simp
+
+-- test case 7: string palindrome
+example : (String.toList "radar" : List Char) = (String.toList "radar" : List Char).reverse := by
+  simp
+
+-- test case 8: boolean list palindrome
+example : ([true, false, true] : List Bool) = ([true, false, true] : List Bool).reverse := by
+  simp

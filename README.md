@@ -1,8 +1,8 @@
-## 🔮 lean4 toolkit
+## 🔮 Lean 4 toolkit
 
 <br>
 
-> *this repository contains examples and explanations as i learn lean4 (a powerful theorem prover and programming language for the AI age)*
+> *this repository contains examples and explanations as i learn Lean 4 (a powerful theorem prover and programming language for the AI age)*
 
 <br>
 
@@ -49,9 +49,9 @@ lake --version
 
 - `src.lean`: the main entry point for the source code
 - `src/`: source code for concepts and `examples/` 
-- `lakefile.lean`: the lean package manager configuration file (TODO: replace with `toml`)
-- `lean-toolchain`: specifies the Lean version for the project
-- `Makefile`: speficify all available commands
+- `lakefile.lean`: the lean package manager configuration file
+- `lean-toolchain`: specifies the Lean version for the project (elan manages the compiler toolchains)
+- `Makefile`: specify all available commands
 
 <br>
 
@@ -84,16 +84,21 @@ run any other file inside `src/example/` following its command inside `Makefile`
 
 #### my notes
 
-<br>
-
 - [basics](docs/basic_concepts.md)
 
 <br>
 
 #### learning lean
 
-- [learn lean](https://lean-lang.org/documentation/0)
-- [lean4 documentation](https://leanprover.github.io/lean4/doc/)
+- ✅ [learn Lean from lean-lang.org](https://lean-lang.org/documentation/0)
+- 🟡 [Lean 4 documentation](https://leanprover.github.io/lean4/doc/)
+- 🟡 [mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/C01_Introduction.html)
+- 🟡 [theorem proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
+
+<br>
+
+#### useful
+
 - [vscode/cursor plugin](https://marketplace.visualstudio.com/items?itemName=leanprover.lean4)
 
 <br>

@@ -15,4 +15,4 @@ lean_lib «src» {
 
 lean_exe Main {
   root := `Main
-} 
+}
