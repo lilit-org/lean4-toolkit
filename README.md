@@ -1,8 +1,8 @@
-## 🔮 lean4 toolkit
+## 🔮 Lean 4 toolkit
 
 <br>
 
-> *this repository contains examples and explanations as i learn lean4 (a powerful theorem prover and programming language for the AI age)*
+> *this repository contains examples and explanations as i learn Lean 4 (a powerful theorem prover and programming language for the AI age)*
 
 <br>
 
@@ -92,8 +92,8 @@ run any other file inside `src/example/` following its command inside `Makefile`
 
 #### learning lean
 
-- [learn lean](https://lean-lang.org/documentation/0)
-- [lean4 documentation](https://leanprover.github.io/lean4/doc/)
+- ✅[learn lean](https://lean-lang.org/documentation/0)
+- [Lean 4 documentation](https://leanprover.github.io/lean4/doc/)
 - [vscode/cursor plugin](https://marketplace.visualstudio.com/items?itemName=leanprover.lean4)
 
 <br>
