@@ -6,11 +6,20 @@
 
 <br>
 
+* Lean is a strict pure functional language with dependent types
+    - strictness: function calls work similarly to the way they do in most languages (the arguments are fully computed before the function's body begins running)
+    - purity: programs cannot have side effects such as modifying locations in memory, sending emails, or deleting files without the program's type saying so.
+    - functions are first-class values
+    - the execution model is inspired by the evaluation of mathematical expressions
+    - dependent types make types into a first-class part of the language
 * there are two primary concepts in lean: functions and types
 * basic types examples are natural numbers (`Nat`, whole numbers starting from 0), booleans (`Bool`), true or false values, strings
 * functions are defined using the `def` keyword (`def double (n : Nat) : Nat := n + n`)
-* check types using `#check`
-* evaluate expressions using `#eval`
+* Lean is an expression-oriented functional language, there are no conditional statements, only conditional expressions (e.g. `String.append "it is " (if 1 > 2 then "yes" else "no")`)
+* iterative tests:
+    - `#check`: verify the type of an expression (without evaluating it)
+    - `#eval`: evaluate expressions
+    - `#reduce`: see the normal form of an expression
 
 <br>
 

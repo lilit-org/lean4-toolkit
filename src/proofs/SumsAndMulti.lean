@@ -6,7 +6,6 @@ import «src».definitions.Basics
 ## the same as adding their doubles --> 2(n + m) = 2n + 2m
 ##
 -/
-
 theorem double_add (n m : Nat) : double (n + m) = double n + double m := by
   -- unfold the definition of double to work with the raw addition
   unfold double
@@ -34,7 +33,6 @@ theorem double_zero : double 0 = 0 := by
 ## 2(n * m) = (2n) * m
 ##
 -/
-
 theorem double_mul (n m : Nat) : double (n * m) = (double n) * m := by
   unfold double
   -- after unfolding, we have: (n * m) + (n * m) = (n + n) * m

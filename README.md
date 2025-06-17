@@ -50,8 +50,8 @@ lake --version
 - `src.lean`: the main entry point for the source code
 - `src/`: source code for concepts and `examples/` 
 - `lakefile.lean`: the lean package manager configuration file (TODO: replace with `toml`)
-- `lean-toolchain`: specifies the Lean version for the project
-- `Makefile`: speficify all available commands
+- `lean-toolchain`: specifies the Lean version for the project (elan manages the compiler toolchains)
+- `Makefile`: specify all available commands
 
 <br>
 
