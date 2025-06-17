@@ -49,7 +49,7 @@ lake --version
 
 - `src.lean`: the main entry point for the source code
 - `src/`: source code for concepts and `examples/` 
-- `lakefile.lean`: the lean package manager configuration file (TODO: replace with `toml`)
+- `lakefile.lean`: the lean package manager configuration file
 - `lean-toolchain`: specifies the Lean version for the project (elan manages the compiler toolchains)
 - `Makefile`: specify all available commands
 
@@ -84,17 +84,21 @@ run any other file inside `src/example/` following its command inside `Makefile`
 
 #### my notes
 
-<br>
-
 - [basics](docs/basic_concepts.md)
 
 <br>
 
 #### learning lean
 
-- ✅[learn lean](https://lean-lang.org/documentation/0)
-- [Lean 4 documentation](https://leanprover.github.io/lean4/doc/)
-- [vscode/cursor plugin](https://marketplace.visualstudio.com/items?itemName=leanprover.lean4)
+- ✅[learn Lean](https://lean-lang.org/documentation/0)
+- 🟡[Lean 4 documentation](https://leanprover.github.io/lean4/doc/)
+- 🟡[mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/C01_Introduction.html)
+- 🟡[theorem proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
+
+
+#### useful
+
+- 🟡[vscode/cursor plugin](https://marketplace.visualstudio.com/items?itemName=leanprover.lean4)
 
 <br>
 
