@@ -102,6 +102,7 @@ run any other file inside `src/example/` following its command inside `Makefile`
 - 🟡 [the Lean 4 theorem prover and programming language](https://lean-lang.org/papers/lean4.pdf)
 - 🟡 [an extensible theorem proving frontend](https://lean-lang.org/papers/thesis-sebastian.pdf)
 - 🟡 [a metaprogramming framework for formal verification](https://lean-lang.org/papers/tactic.pdf)
+- 🟡 [terence tao on future of AI in mathematics](https://www.youtube.com/watch?v=bzMh4b5awHw)
 
 <br>
 
