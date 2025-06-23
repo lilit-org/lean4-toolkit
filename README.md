@@ -96,6 +96,7 @@ run any other file inside `src/example/` following its command inside `Makefile`
 - ✅ [Lean prover community](https://leanprover-community.github.io/)
 - 🟡 [Lean 4 documentation](https://leanprover.github.io/lean4/doc/)
 - 🟡 [mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/C01_Introduction.html)
+- 🟡 [learning mathematics with lean (videos)](https://www.youtube.com/playlist?list=PLgBHexwnIcduLcwinFhr8mHMk9WttUs4O)
 - 🟡 [theorem proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
 - 🟡 [the matrix cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) with [code](https://github.com/eric-wieser/lean-matrix-cookbook)
 - 🟡 [the Lean 4 theorem prover and programming language](https://lean-lang.org/papers/lean4.pdf)
@@ -122,3 +123,5 @@ run any other file inside `src/example/` following its command inside `Makefile`
     - *"types are fundamentally equivalent to logical propositions"*
 - [AI safety via debate, by g. irving et al (2018)](https://arxiv.org/pdf/1805.00899)
     - *"in the debate game, it is harder to lie than to refute a lie."*
+- [meta's teaching AI advanced mathematical reasoning](https://ai.meta.com/blog/ai-math-theorem-proving/)
+    - *"our method, HyperTree Proof Search (HTPS), is trained on a dataset of successful mathematical proofs and then learns to generalize to new, very different kinds of problems. It was able to deduce a correct proof for an IMO problem that involved some arithmetic reduction to a finite number of cases"

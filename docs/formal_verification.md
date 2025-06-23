@@ -15,6 +15,13 @@ complex systems with mathematical rigor
 
 <br>
 
+<p align="center">
+<img src="images/formalization.png" width=80%" align="center" style="padding:1px;border:1px solid black;"/>
+</p>
+
+
+<br>
+
 ---
 
 ## proof assistant

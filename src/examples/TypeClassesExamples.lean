@@ -3,6 +3,7 @@ import src.definitions.TypeClasses
 /-!
 ##
 ## this file demonstrates various examples of using the doublable type class
+##
 -/
 
 -- basic list doubling
