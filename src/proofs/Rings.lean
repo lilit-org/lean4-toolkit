@@ -1,5 +1,6 @@
 import Mathlib.Algebra.Group.Basic
 import Mathlib.Algebra.Group.Defs
+import Mathlib.Data.Real.Basic
 
 variable (A : Type*) [AddGroup A]
 
@@ -25,18 +26,25 @@ variable {G : Type*} [Group G]
 ##
 -/
 
+-- associativity of multiplication
+example (a b c d e f : ℝ) (h : a * b = c * d) (h' : e = f) : a * (b * e) = c * (d * f) := by
+  rw [h'] at *
+  rw [← mul_assoc]
+  rw [h]
+  rw [mul_assoc]
+
+
 -- simple lemma: the identity element is unique
 lemma unique_identity (e e' : G)
     (he : ∀ g : G, e * g = g ∧ g * e = g)
     (he' : ∀ g : G, e' * g = g ∧ g * e' = g) :
     e = e' :=
 by
-  -- first, show that e * e' = e' using the fact that e' is an identity
-  have h1 : e * e' = e' := (he' e).left
+  -- use the fact that e' is an identity: e * e' = e'
+  have h1 : e * e' = e' := (he e').left
 
-  -- next, show that e * e' = e using the fact that e is an identity
-  have h2 : e * e' = e := (he e').right
+  -- use the fact that e is an identity: e * e' = e
+  have h2 : e * e' = e := (he' e).right
 
-  -- combine these equalities to show e = e'
-  rw [← h2] at h1
-  exact h1.symm
+  -- combine: e = e * e' = e', so e = e'
+  exact h2.symm.trans h1

@@ -12,7 +12,9 @@
     - functions are first-class values
     - the execution model is inspired by the evaluation of mathematical expressions
     - dependent types make types into a first-class part of the language
-* there are two primary concepts in lean: functions and types
+* there are two primary concepts in lean: 
+    - functions (perform work on inputs to produce outputs, organized under namespaces)
+    - types
 * basic types examples are natural numbers (`Nat`, whole numbers starting from 0), booleans (`Bool`), true or false values, strings
 * functions are defined using the `def` keyword (`def double (n : Nat) : Nat := n + n`)
 * arguments can be declared implicit by wrapping them in curly braces instead of parentheses when defining a function

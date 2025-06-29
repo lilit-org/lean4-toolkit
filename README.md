@@ -6,6 +6,10 @@
 
 <br>
 
+<p align="center">
+<img src="docs/images/teacher.png" width="60%" align="center"/>
+</p>
+
 ---
 
 ### installation
