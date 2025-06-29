@@ -100,9 +100,13 @@ run any other file inside `src/example/` following its command inside `Makefile`
 - 🟡 [theorem proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
 - 🟡 [the matrix cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf) with [code](https://github.com/eric-wieser/lean-matrix-cookbook)
 - 🟡 [the Lean 4 theorem prover and programming language](https://lean-lang.org/papers/lean4.pdf)
+- 🟡 [more theorem proving in Lean 4](https://lean-lang.org/theorem_proving_in_lean4/)
 - 🟡 [an extensible theorem proving frontend](https://lean-lang.org/papers/thesis-sebastian.pdf)
 - 🟡 [a metaprogramming framework for formal verification](https://lean-lang.org/papers/tactic.pdf)
 - 🟡 [terence tao on future of AI in mathematics](https://www.youtube.com/watch?v=bzMh4b5awHw)
+- 🟡 [the mechanics of proof](https://hrmacbeth.github.io/math2001/#)
+- 🟡 [partial Lean formalization of analysis I](https://teorth.github.io/analysis/)
+- 🟡 [welcome to the natural number game](https://adam.math.hhu.de/#/g/leanprover-community/nng4)
 
 <br>
 
@@ -123,6 +127,6 @@ run any other file inside `src/example/` following its command inside `Makefile`
 - [the deep link equating math proofs and computer programs](https://www.quantamagazine.org/the-deep-link-equating-math-proofs-and-computer-programs-20231011/)
     - *"types are fundamentally equivalent to logical propositions"*
 - [AI safety via debate, by g. irving et al (2018)](https://arxiv.org/pdf/1805.00899)
-    - *"in the debate game, it is harder to lie than to refute a lie."*
+    - *"in the debate game, it is harder to lie than to refute a lie"*
 - [meta's teaching AI advanced mathematical reasoning](https://ai.meta.com/blog/ai-math-theorem-proving/)
     - *"our method, HyperTree Proof Search (HTPS), is trained on a dataset of successful mathematical proofs and then learns to generalize to new, very different kinds of problems. It was able to deduce a correct proof for an IMO problem that involved some arithmetic reduction to a finite number of cases"
